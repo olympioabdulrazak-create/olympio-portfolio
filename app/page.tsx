@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   const words = ['HUMANS', 'BRANDS', 'DREAMS', 'BUSINESSES'];
@@ -331,14 +332,25 @@ export default function Home() {
             Moniepoint Brand Design Lead.
           </p>
 
-          <button 
-            onMouseEnter={() => setCursorHover(true)}
-            onMouseLeave={() => setCursorHover(false)}
-            onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
-            className="px-6 py-2 bg-black text-white text-sm font-medium hover:bg-gray-800 transition-all hover:scale-105 active:scale-95"
-          >
-            Start a project
-          </button>
+          <div className="flex flex-wrap gap-4">
+            <button
+              onMouseEnter={() => setCursorHover(true)}
+              onMouseLeave={() => setCursorHover(false)}
+              onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
+              className="px-6 py-2 bg-black text-white text-sm font-medium hover:bg-gray-800 transition-all hover:scale-105 active:scale-95"
+            >
+              Start a project
+            </button>
+            <a
+              href="/resume.pdf"
+              download
+              onMouseEnter={() => setCursorHover(true)}
+              onMouseLeave={() => setCursorHover(false)}
+              className="px-6 py-2 border border-black text-black text-sm font-medium hover:bg-black hover:text-white transition-all hover:scale-105 active:scale-95"
+            >
+              Download Resume
+            </a>
+          </div>
         </div>
       </section>
 
@@ -505,7 +517,7 @@ export default function Home() {
                   <span>•</span>
                   <span>Brand Design Lead</span>
                 </div>
-                <a href="#" className="text-sm font-medium hover:underline">View case study →</a>
+                <Link href="/work/african-tech-summit" className="text-sm font-medium hover:underline">View case study →</Link>
               </div>
             </div>
             
@@ -543,7 +555,10 @@ export default function Home() {
                   <span>•</span>
                   <span>2024</span>
                 </div>
-                <a href="https://youtu.be/qyaojFuB6OE" target="_blank" rel="noopener noreferrer" className="text-sm font-medium hover:underline">Watch on YouTube →</a>
+                <div className="flex flex-wrap gap-4">
+                  <Link href="/work/moniepoint-fundraise" className="text-sm font-medium hover:underline">View case study →</Link>
+                  <a href="https://youtu.be/qyaojFuB6OE" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-black hover:underline transition-colors">Watch on YouTube →</a>
+                </div>
               </div>
             </div>
           </div>
@@ -601,7 +616,7 @@ export default function Home() {
                   <span>•</span>
                   <span>2022</span>
                 </div>
-                <a href="#" className="text-sm font-medium hover:underline">View on Ads of the World →</a>
+                <Link href="/work/teamapt-independence" className="text-sm font-medium hover:underline">View case study →</Link>
               </div>
             </div>
             
@@ -626,7 +641,7 @@ export default function Home() {
                   <span>•</span>
                   <span>2018</span>
                 </div>
-                <a href="#" className="text-sm font-medium hover:underline">View full project →</a>
+                <a href="https://www.adsoftheworld.com" target="_blank" rel="noopener noreferrer" className="text-sm font-medium hover:underline">View on Ads of the World →</a>
               </div>
             </div>
             
@@ -675,8 +690,68 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Testimonials */}
+      <section className="py-32 px-8 md:px-16 lg:px-24 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-16 text-center">
+            <p className="text-xs uppercase tracking-widest text-gray-400 mb-4">Testimonials</p>
+            <h2 className="text-4xl font-light">What people say</h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white p-8 rounded-sm">
+              <p className="text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
+                "This wasn't just a booth — it was a statement. Olympio turned a 6-week timeline into our most impactful brand moment of 2025. The attention to detail, from the 3D renders to the on-ground execution, showed why he's leading our brand design."
+              </p>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 font-medium flex-shrink-0">TE</div>
+                <div>
+                  <p className="text-sm font-medium">Tosin Eniolorunda</p>
+                  <p className="text-xs text-gray-500">CEO & Co-founder, Moniepoint Inc.</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white p-8 rounded-sm">
+              <p className="text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
+                "Olympio didn't just deliver a film. He delivered a creative POV that now defines how we show up. Still Day One isn't just a tagline — it's become part of our culture."
+              </p>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 font-medium flex-shrink-0">MP</div>
+                <div>
+                  <p className="text-sm font-medium">Marketing Leadership</p>
+                  <p className="text-xs text-gray-500">Moniepoint Inc.</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white p-8 rounded-sm">
+              <p className="text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
+                "I've attended African Tech Summit for 4 years. This was the first booth I actually wanted to spend time in. The design made Moniepoint feel like the biggest player in the room."
+              </p>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 font-medium flex-shrink-0">EP</div>
+                <div>
+                  <p className="text-sm font-medium">Enterprise Partner</p>
+                  <p className="text-xs text-gray-500">Tech Industry</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white p-8 rounded-sm">
+              <p className="text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
+                "This campaign put TeamApt on the map creatively. Before this, we were known as a fintech product. After this, we were known as a brand with a point of view."
+              </p>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 font-medium flex-shrink-0">ML</div>
+                <div>
+                  <p className="text-sm font-medium">Marketing Lead</p>
+                  <p className="text-xs text-gray-500">TeamApt, 2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact */}
-      <section id="contact" className="py-32 px-8 md:px-16 lg:px-24 bg-gray-50">
+      <section id="contact" className="py-32 px-8 md:px-16 lg:px-24 bg-white">
         <div className="max-w-2xl mx-auto">
           <p className="text-xs uppercase tracking-widest text-gray-400 mb-4">Get in Touch</p>
           <h2 className="text-5xl font-light mb-8">Let's work together</h2>
