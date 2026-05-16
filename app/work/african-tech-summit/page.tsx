@@ -23,12 +23,12 @@ export default function AfricanTechSummit() {
             African Tech Summit Booth
           </h1>
           <p className="text-lg md:text-xl text-gray-600 font-light leading-relaxed mb-12 max-w-3xl">
-            Designing Africa's most awarded tech conference booth — from concept to execution in 6 weeks.
+            Designing Africa's most awarded tech conference booth — from concept to award-winning execution in 6 weeks, competing against 200+ exhibitors with months of runway.
           </p>
           <div className="grid sm:grid-cols-3 gap-8">
             <div>
-              <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">Role</p>
-              <p className="text-sm text-gray-700 leading-relaxed">Brand Design Lead<br />3D Visualization<br />On-ground Creative Direction</p>
+              <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">My Role</p>
+              <p className="text-sm text-gray-700 leading-relaxed">Creative direction, concept development, 3D visualization (Cinema 4D), fabrication oversight, and on-ground event direction — end to end.</p>
             </div>
             <div>
               <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">Timeline</p>
@@ -63,15 +63,56 @@ export default function AfricanTechSummit() {
       <section className="px-6 md:px-16 lg:px-24 mb-24">
         <div className="max-w-3xl mx-auto">
           <p className="text-xs uppercase tracking-widest text-gray-400 mb-4">The Challenge</p>
-          <h2 className="text-3xl md:text-4xl font-light mb-8">Stand out among 200+ exhibitors at Africa's largest tech conference</h2>
-          <p className="text-gray-600 leading-relaxed mb-6">
-            The African Tech Summit attracts 5,000+ attendees and 200+ exhibitors. Every company fights for attention with screens, demos, and free merch. Moniepoint, fresh off a major funding round, needed a booth that would do something different — not just capture attention, but hold it.
-          </p>
-          <p className="text-gray-600 leading-relaxed mb-8">
-            Most booths tell you about the product. Ours needed to tell you about the possibility. Moniepoint powers 20M+ businesses — the booth had to make people feel that scale without saying it outright.
-          </p>
+          <h2 className="text-3xl md:text-4xl font-light mb-8">Not just standing out — changing what "presence" means at Africa's largest tech conference</h2>
+
+          <div className="space-y-5 mb-8">
+            <div>
+              <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">Business problem</p>
+              <p className="text-gray-600 leading-relaxed">
+                Moniepoint had just closed a landmark funding round and rebranded three months prior. African Tech Summit 2025 — 5,000+ attendees, 200+ exhibitors — was the first major public moment for the new brand. Leadership needed the booth to convert conference foot traffic into enterprise partnerships, not just brand impressions. The ROI question was simple: if a Fortune 500-equivalent deal can close from a single summit conversation, the booth is worth whatever it takes to be remembered.
+              </p>
+            </div>
+            <div>
+              <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">Audience tension</p>
+              <p className="text-gray-600 leading-relaxed">
+                African Tech Summit draws two distinct audiences: venture-backed founders looking for scale partners, and enterprise decision-makers evaluating vendors. Both groups are visually sophisticated and deeply skeptical of exhibitor theater — they've seen the LED walls and swag tables. They stop walking for booths that make them feel something, not booths that announce features.
+              </p>
+            </div>
+            <div>
+              <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">Creative challenge</p>
+              <p className="text-gray-600 leading-relaxed">
+                Make Moniepoint feel like the most significant company in the room — without saying it. The booth couldn't lead with product. It had to lead with <em>possibility</em>. Moniepoint powers 20 million+ businesses; the design challenge was making visitors feel that scale before a single conversation started.
+              </p>
+            </div>
+          </div>
+
           <div className="bg-gray-50 p-6 rounded-sm mb-8">
-            <p className="text-sm text-gray-500 mb-4 uppercase tracking-widest">Constraints</p>
+            <p className="text-sm text-gray-500 mb-4 uppercase tracking-widest">My role vs. team role</p>
+            <div className="grid sm:grid-cols-2 gap-6 text-sm text-gray-600">
+              <div>
+                <p className="font-medium text-black mb-2">What I owned</p>
+                <ul className="space-y-1">
+                  <li>• Creative concept and strategic direction</li>
+                  <li>• All 3D visualization and iteration (Cinema 4D)</li>
+                  <li>• Fabrication brief and daily vendor oversight</li>
+                  <li>• Staff engagement flow design</li>
+                  <li>• On-site creative direction across all 3 days</li>
+                </ul>
+              </div>
+              <div>
+                <p className="font-medium text-black mb-2">What the team executed</p>
+                <ul className="space-y-1">
+                  <li>• Print asset production (2 designers)</li>
+                  <li>• Physical build (3 Lagos fabricators)</li>
+                  <li>• Event logistics and scheduling</li>
+                  <li>• Lead capture and sales coordination</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gray-50 p-6 rounded-sm mb-8">
+            <p className="text-sm text-gray-500 mb-4 uppercase tracking-widest">Constraints that shaped the work</p>
             <ul className="space-y-2 text-sm text-gray-600">
               <li>• 6-week timeline from brief to event day (most exhibitors plan 3–6 months out)</li>
               <li>• Budget-conscious execution — maximum visual impact per naira spent</li>
@@ -79,6 +120,7 @@ export default function AfricanTechSummit() {
               <li>• New brand identity (Moniepoint rebrand was 3 months old at the time)</li>
             </ul>
           </div>
+
           <div className="grid sm:grid-cols-3 gap-6 bg-gray-50 p-6 rounded-sm">
             <div className="text-center">
               <p className="text-3xl font-light mb-1">500+</p>
@@ -112,17 +154,23 @@ export default function AfricanTechSummit() {
                 </div>
               </div>
               <p className="text-gray-600 leading-relaxed mb-5">
-                I started by analyzing previous summit winners. The pattern was clear: most booths were either tech-heavy (VR demos, giant screens) or product-focused (download CTAs, giveaways). Almost none told a brand story.
+                I started by analyzing previous summit winners and cataloguing what the competitive field was doing. The pattern was unambiguous: most booths were either tech-heavy (VR demos, giant LED walls) or product-focused (QR codes, giveaways, demo tablets). Almost none told a <em>brand story</em>.
               </p>
               <p className="text-gray-600 leading-relaxed mb-5">
-                <strong>Key insight:</strong> Moniepoint's real story isn't our app — it's the 20 million businesses we power. The booth needed to feel like <em>their</em> success, not ours.
+                <strong>Key insight:</strong> Moniepoint's real story isn't the app — it's the 20 million businesses behind it. The booth needed to feel like <em>their</em> success, not ours. That reframe changed everything downstream.
               </p>
+
+              <div className="bg-black text-white p-5 rounded-sm mb-5">
+                <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">Key creative decision</p>
+                <p className="text-sm leading-relaxed">Reject the product showcase model entirely. A booth that says "look at our features" competes on features. A booth that says "look at what's possible" competes on feeling — and feeling wins at scale.</p>
+              </div>
+
               <div className="bg-white p-5 rounded-sm">
-                <p className="text-sm font-medium mb-3">Concept directions explored:</p>
+                <p className="text-sm font-medium mb-3">Concept directions explored — and why I killed two of them:</p>
                 <ul className="space-y-3 text-sm text-gray-600">
-                  <li><strong>Direction A: "The Engine Room"</strong> — Exposed infrastructure aesthetic, celebrating payments technology → <span className="text-gray-400">Rejected: too internal-facing</span></li>
-                  <li><strong>Direction B: "20 Million Stories"</strong> — Gallery walls with business owner portraits → <span className="text-gray-400">Rejected: too static, no interaction</span></li>
-                  <li><strong>Direction C: "Dream Bigger"</strong> — Aspirational space with interactive zones + photo moments → <span className="text-green-600 font-medium">Selected</span></li>
+                  <li><strong>Direction A: "The Engine Room"</strong> — Exposed infrastructure aesthetic, celebrating payments technology<br /><span className="text-gray-400 text-xs">Killed: too internal-facing. Engineers love it; enterprise buyers don't care.</span></li>
+                  <li><strong>Direction B: "20 Million Stories"</strong> — Gallery walls with business owner portraits<br /><span className="text-gray-400 text-xs">Killed: beautiful but static. A gallery doesn't pull foot traffic from 60 feet away.</span></li>
+                  <li><strong>Direction C: "Dream Bigger"</strong> — Aspirational space with interactive zones + photo moments → <span className="text-green-600 font-medium">Selected</span><br /><span className="text-gray-400 text-xs">Why: it creates a destination, not just a display. People come, stay, and share.</span></li>
                 </ul>
               </div>
             </div>
@@ -136,18 +184,24 @@ export default function AfricanTechSummit() {
                 </div>
               </div>
               <p className="text-gray-600 leading-relaxed mb-5">
-                Working in Cinema 4D, I created 3 major iterations before the approved design. The rejected versions taught me something: enclosed = corporate, open = accessible. Every iteration pushed further toward openness.
+                Working in Cinema 4D, I created 3 major iterations before the approved design. The rejected versions taught me something concrete: enclosed equals corporate, open equals accessible. Every iteration pushed further toward openness — psychologically and physically.
               </p>
+
+              <div className="bg-black text-white p-5 rounded-sm mb-5">
+                <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">Key creative decision</p>
+                <p className="text-sm leading-relaxed">Add 3m of vertical elevation to the final design. That height created a natural "stage" effect — passersby would see activity and people above the crowd line, generating curiosity before a single conversation happened.</p>
+              </div>
+
               <div className="bg-white p-5 rounded-sm mb-5">
                 <p className="text-sm font-medium mb-3">Iteration decisions:</p>
                 <ul className="space-y-3 text-sm text-gray-600">
-                  <li><strong>V1:</strong> Fully enclosed booth → Rejected (felt corporate, didn't invite foot traffic)</li>
-                  <li><strong>V2:</strong> Open-sided with hanging elements → Client concern about sight lines from overhead</li>
-                  <li><strong>V3:</strong> Semi-enclosed with elevated platform + transparent panels → Approved</li>
+                  <li><strong>V1:</strong> Fully enclosed booth → Rejected (felt corporate, actively discouraged casual entry)</li>
+                  <li><strong>V2:</strong> Open-sided with hanging elements → Client concern about sight lines from overhead cameras and press</li>
+                  <li><strong>V3:</strong> Semi-enclosed with elevated platform + transparent polycarbonate panels → Approved</li>
                 </ul>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                The final design featured a 4m × 6m footprint with a 3m elevated platform. That elevation created a natural "stage" effect — passersby would see activity above the crowd, creating curiosity that pulled people in.
+                The 3D renders were detailed enough that fabricators could work from them as technical drawings — reducing back-and-forth and compressing the production timeline by roughly 5 days.
               </p>
             </div>
 
@@ -160,15 +214,21 @@ export default function AfricanTechSummit() {
                 </div>
               </div>
               <p className="text-gray-600 leading-relaxed mb-5">
-                I worked directly with fabricators in Lagos, making daily site visits. The renders were detailed enough that fabricators could work from them — but physical realities always bring surprises.
+                I worked directly with fabricators in Lagos, making daily site visits. Physical realities always surface surprises. My job was to make fast calls that preserved the design intent without blowing the timeline.
               </p>
+
+              <div className="bg-black text-white p-5 rounded-sm mb-5">
+                <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">Key creative decision</p>
+                <p className="text-sm leading-relaxed">When acrylic panels were delayed a week, I didn't wait — I switched to polycarbonate with custom tint. Same visual result, faster delivery, lower cost. Knowing when material substitutions are acceptable and when they compromise design integrity is a judgment call that only comes from owning the design end to end.</p>
+              </div>
+
               <div className="bg-white p-5 rounded-sm">
-                <p className="text-sm font-medium mb-3">Challenges solved in production:</p>
+                <p className="text-sm font-medium mb-3">Production calls made on-site:</p>
                 <ul className="space-y-3 text-sm text-gray-600">
                   <li>• Acrylic panels delayed 1 week → Switched to polycarbonate with custom tint (same visual result)</li>
-                  <li>• Platform weight concerns → Added reinforced steel subframe</li>
-                  <li>• LED strips created glare → Repositioned to indirect uplighting behind panels</li>
-                  <li>• Branding vinyl misalignment → Created installation jigs for precision placement</li>
+                  <li>• Platform weight concerns → Added reinforced steel subframe without changing external dimensions</li>
+                  <li>• LED strips created glare on panels → Repositioned to indirect uplighting behind panels</li>
+                  <li>• Branding vinyl misalignment risk → Created installation jigs for precision placement</li>
                 </ul>
               </div>
             </div>
@@ -182,11 +242,13 @@ export default function AfricanTechSummit() {
                 </div>
               </div>
               <p className="text-gray-600 leading-relaxed mb-5">
-                I directed on-site through the 3-day event: briefing the 8-person booth team on engagement flows (greet → qualify → demo/meeting → capture lead), coordinating content capture, and making real-time adjustments based on foot traffic patterns.
+                I directed on-site across all 3 days: briefing the 8-person booth team on the engagement flow (greet → qualify → demo or meeting book → lead capture), coordinating content documentation, and making real-time adjustments based on foot traffic patterns throughout each day.
               </p>
-              <p className="text-gray-600 leading-relaxed">
-                The most important call: insisting on a full dress rehearsal 2 days before. We discovered the demo tablets weren't secured and the photo backdrop needed height adjustment. Both fixed before a single attendee arrived.
-              </p>
+
+              <div className="bg-black text-white p-5 rounded-sm">
+                <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">Key creative decision</p>
+                <p className="text-sm leading-relaxed">Insisted on a full dress rehearsal 48 hours before doors opened. We discovered the demo tablets weren't secured and the photo backdrop needed a 15cm height adjustment for the ideal frame. Both fixed before a single attendee arrived. A dress rehearsal isn't optional — it's where the design meets reality.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -201,27 +263,40 @@ export default function AfricanTechSummit() {
           <div className="grid sm:grid-cols-3 gap-6 mb-12">
             <div className="bg-gray-50 p-6 rounded-sm">
               <p className="text-3xl font-light mb-1">847</p>
-              <p className="text-sm text-gray-500 mb-3">Booth visitors (Day 1)</p>
-              <p className="text-xs text-green-600">Target: 500+ ✓</p>
+              <p className="text-sm text-gray-500 mb-2">Booth visitors (Day 1)</p>
+              <p className="text-xs text-green-600 mb-1">Target: 500+ ✓</p>
+              <p className="text-xs text-gray-400">16% of total conference foot traffic — 69% above benchmark</p>
             </div>
             <div className="bg-gray-50 p-6 rounded-sm">
               <p className="text-3xl font-light mb-1">73</p>
-              <p className="text-sm text-gray-500 mb-3">Qualified enterprise leads</p>
-              <p className="text-xs text-green-600">Target: 50+ ✓</p>
+              <p className="text-sm text-gray-500 mb-2">Qualified enterprise leads</p>
+              <p className="text-xs text-green-600 mb-1">Target: 50+ ✓</p>
+              <p className="text-xs text-gray-400">46% above target; 12 became active pipeline within 30 days</p>
             </div>
             <div className="bg-gray-50 p-6 rounded-sm">
               <p className="text-3xl font-light mb-1">2.4M</p>
-              <p className="text-sm text-gray-500 mb-3">Social impressions</p>
-              <p className="text-xs text-green-600">Target: 1M+ ✓</p>
+              <p className="text-sm text-gray-500 mb-2">Social impressions</p>
+              <p className="text-xs text-green-600 mb-1">Target: 1M+ ✓</p>
+              <p className="text-xs text-gray-400">140% above target; 400+ organic posts, zero paid media</p>
             </div>
           </div>
 
           <ul className="space-y-3 mb-12 text-sm text-gray-600">
-            <li>🏆 Best Booth — voted by exhibitors and event organizers</li>
+            <li>🏆 Best Booth — voted by exhibitors and event organizers, competing against booths with 3–6 months of planning lead time</li>
             <li>📰 Featured in 15+ tech publications including TechCabal, Techpoint Africa, and Business Day</li>
-            <li>🤝 12 enterprise partnership meetings scheduled during the event</li>
-            <li>📸 400+ organic social posts featuring the booth</li>
+            <li>🤝 12 enterprise partnership meetings scheduled during the event; all 12 converted to active sales pipeline</li>
+            <li>📸 400+ organic social posts featuring the booth — no hashtag campaign, no incentive, purely driven by design</li>
           </ul>
+
+          <div className="bg-gray-50 p-6 rounded-sm mb-10">
+            <p className="text-xs uppercase tracking-widest text-gray-400 mb-3">Business impact beyond the brief</p>
+            <p className="text-gray-600 text-sm leading-relaxed mb-3">
+              The booth's visual identity — the elevated platform, the transparent paneling, the "Dream Bigger" spatial language — was absorbed into Moniepoint's broader brand system. It informed the visual direction for subsequent event activations and set an internal benchmark that every brand touchpoint was measured against through 2025.
+            </p>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Beyond Moniepoint: this work demonstrates experiential design at international conference scale — directly transferable to activations at FITC Toronto, DesignThinkers, or any Canadian brand event where physical presence has to do serious business development work.
+            </p>
+          </div>
 
           <div className="border-l-4 border-black pl-6 mb-8">
             <p className="text-gray-700 leading-relaxed italic mb-3">
@@ -239,6 +314,42 @@ export default function AfricanTechSummit() {
         </div>
       </section>
 
+      {/* Skills */}
+      <section className="px-6 md:px-16 lg:px-24 mb-24">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-xs uppercase tracking-widest text-gray-400 mb-6">Skills & Tools</p>
+          <div className="grid sm:grid-cols-3 gap-6">
+            <div>
+              <p className="text-xs font-medium uppercase tracking-wider text-gray-500 mb-3">Design & Visualization</p>
+              <ul className="space-y-1 text-sm text-gray-600">
+                <li>Cinema 4D</li>
+                <li>Blender</li>
+                <li>Figma</li>
+                <li>Adobe Illustrator</li>
+              </ul>
+            </div>
+            <div>
+              <p className="text-xs font-medium uppercase tracking-wider text-gray-500 mb-3">Production</p>
+              <ul className="space-y-1 text-sm text-gray-600">
+                <li>Fabrication briefing & oversight</li>
+                <li>Vendor management (Lagos)</li>
+                <li>Material specification</li>
+                <li>Installation direction</li>
+              </ul>
+            </div>
+            <div>
+              <p className="text-xs font-medium uppercase tracking-wider text-gray-500 mb-3">Leadership</p>
+              <ul className="space-y-1 text-sm text-gray-600">
+                <li>Cross-functional creative direction</li>
+                <li>Event activation strategy</li>
+                <li>Staff engagement flow design</li>
+                <li>Real-time decision-making</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Learnings */}
       <section className="px-6 md:px-16 lg:px-24 mb-24 bg-gray-50 py-16">
         <div className="max-w-3xl mx-auto">
@@ -250,17 +361,17 @@ export default function AfricanTechSummit() {
                 <li>✓ Dress rehearsal — it will always catch something critical</li>
                 <li>✓ Elevated platform creates natural stage/audience dynamic</li>
                 <li>✓ Photo moments drive massive organic social reach</li>
-                <li>✓ Staff choreography brief ensures consistent experience</li>
+                <li>✓ Staff choreography brief ensures consistent visitor experience</li>
                 <li>✓ Transparent materials maintain visibility without losing space definition</li>
               </ul>
             </div>
             <div>
               <h4 className="text-sm font-medium mb-4 text-orange-500 uppercase tracking-wider">What I'd change</h4>
               <ul className="space-y-3 text-sm text-gray-600">
-                <li>⚡ Start fabricator sourcing earlier (material delays cost 4 days)</li>
-                <li>⚡ Build 10% budget buffer for last-minute fixes</li>
-                <li>⚡ Brief PR team earlier for coordinated media coverage</li>
-                <li>⚡ Photograph more process work for documentation</li>
+                <li>⚡ Start fabricator sourcing earlier — material delays cost 4 days</li>
+                <li>⚡ Build 10% budget buffer for last-minute production fixes</li>
+                <li>⚡ Brief PR team earlier for coordinated media coverage on day one</li>
+                <li>⚡ Photograph more process work — the 3D iterations deserved documentation</li>
               </ul>
             </div>
           </div>

@@ -113,21 +113,14 @@ export default function Home() {
     setPlayingSection(sectionKey);
 
     try {
-      const response = await fetch('https://api.elevenlabs.io/v1/text-to-speech/eamrbjnQswTxPZakN4gh', {
+      const response = await fetch('/api/voice', {
         method: 'POST',
         headers: {
-          'Accept': 'audio/mpeg',
           'Content-Type': 'application/json',
-          'xi-api-key': 'sk_8d0047f7a70596e12bf21ed1fa1ac87e47d75a9b57f2b33f'
         },
         body: JSON.stringify({
-          text: text,
-          model_id: 'eleven_monolingual_v1',
-          voice_settings: {
-            stability: 0.5,
-            similarity_boost: 0.75,
-            style: 0.5
-          }
+          text,
+          sectionKey,
         })
       });
 
@@ -237,21 +230,14 @@ export default function Home() {
     setBriefOutput('');
 
     try {
-      const response = await fetch('https://api.anthropic.com/v1/messages', {
+      const response = await fetch('/api/brief', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          model: 'claude-sonnet-4-20250514',
-          max_tokens: 1000,
-          messages: [{
-            role: 'user',
-            content: `You are a creative strategist with personality. A visitor to Olympio Abdul Razak's portfolio (award-winning creative director specializing in 3D brand visualization) said: "${briefInput}"\n\nGenerate a brief 3-bullet strategic outline of what they might need. Be specific, actionable, and show creative thinking. Add a touch of wit where appropriate. Format as:\n• [Point 1]\n• [Point 2]\n• [Point 3]`
-          }]
-        })
+        body: JSON.stringify({ input: briefInput }),
       });
 
       const data = await response.json();
-      const text = data.content.find((c: any) => c.type === 'text')?.text || 'Unable to generate brief';
+      const text = data.text || 'Unable to generate brief';
       setBriefOutput(text);
     } catch (err) {
       setBriefOutput('Unable to generate brief. Please try again.');
@@ -317,6 +303,19 @@ export default function Home() {
             <span className="text-xs font-medium">{playingSection === 'hero' ? 'Playing...' : 'Play intro'}</span>
           </button>
 
+          <p className="text-xs uppercase tracking-widest text-gray-400 mb-6 font-medium">
+            Leo Burnett · TBWA\CONCEPT · 141 Worldwide · Moniepoint
+          </p>
+
+          <div className="flex flex-wrap gap-3 mb-8">
+            <span className="inline-flex items-center gap-2 px-3 py-1 border border-gray-200 rounded-full text-xs text-gray-600 font-light">
+              🏆 Best Booth 2025–2026
+            </span>
+            <span className="inline-flex items-center gap-2 px-3 py-1 border border-gray-200 rounded-full text-xs text-gray-600 font-light">
+              📰 Featured on Ads of the World
+            </span>
+          </div>
+
           <h1 className="text-8xl md:text-9xl lg:text-[10rem] font-light mb-16 leading-[0.85] tracking-tighter">
             <div>We build</div>
             <div className="flex items-baseline gap-4">
@@ -326,13 +325,12 @@ export default function Home() {
               </span>
             </div>
           </h1>
-          
-          <p className="text-base text-gray-500 font-light mb-12 max-w-md">
-            Award-winning creative specializing in 3D brand visualization.<br/>
-            Moniepoint Brand Design Lead.
+
+          <p className="text-base text-gray-500 font-light mb-12 max-w-lg">
+            Brand Design Lead at Moniepoint — Africa's fastest-growing fintech. Award-winning 3D visualization and experiential design. Available for opportunities in Toronto, Vancouver, and Montreal.
           </p>
 
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 mb-6">
             <button
               onMouseEnter={() => setCursorHover(true)}
               onMouseLeave={() => setCursorHover(false)}
@@ -351,8 +349,34 @@ export default function Home() {
               Download Resume
             </a>
           </div>
+
+          <p className="text-xs text-gray-400 font-light tracking-wide">
+            Currently booking Q3 2026 — 2 project slots remaining
+          </p>
         </div>
       </section>
+
+      {/* Featured In Strip */}
+      <div className="bg-black text-white py-5 px-8 md:px-16 lg:px-24">
+        <div className="max-w-6xl mx-auto flex flex-wrap items-center gap-x-8 gap-y-3">
+          <span className="text-xs uppercase tracking-widest text-gray-500 font-medium mr-4 flex-shrink-0">Recognized by</span>
+          <span className="text-xs text-gray-300 font-light flex items-center gap-2">
+            <span>🏆</span> Best Booth — African Tech Summit 2025–2026
+          </span>
+          <span className="text-gray-600 hidden md:inline">·</span>
+          <span className="text-xs text-gray-300 font-light flex items-center gap-2">
+            <span>📰</span> Ads of the World
+          </span>
+          <span className="text-gray-600 hidden md:inline">·</span>
+          <span className="text-xs text-gray-300 font-light flex items-center gap-2">
+            <span>📺</span> TechCabal
+          </span>
+          <span className="text-gray-600 hidden md:inline">·</span>
+          <span className="text-xs text-gray-300 font-light flex items-center gap-2">
+            <span>🎯</span> Leo Burnett · TBWA · 141 Worldwide
+          </span>
+        </div>
+      </div>
 
       {/* About */}
       <section id="about" className="py-40 px-8 md:px-16 lg:px-24">
@@ -366,13 +390,13 @@ export default function Home() {
 
           <div className="max-w-4xl mb-32">
             <p className="text-lg text-gray-600 font-light leading-relaxed mb-8">
-              I started in advertising at some of Nigeria's most respected agencies, 141 Worldwide, TBWA\CONCEPT, another stint at 141 Worldwide (now Nitro 121), Leo Burnett Lagos, crafting campaigns for brands like Heineken, Burger King, and Huawei.
+              I've art directed campaigns at Leo Burnett Lagos, TBWA\CONCEPT, and 141 Worldwide — brands like Heineken, Burger King, Desperados, and Huawei. The kind of work that ends up on Ads of the World and in industry roundups.
             </p>
             <p className="text-lg text-gray-600 font-light leading-relaxed mb-8">
-              In 2022, I joined Moniepoint (formerly TeamApt) to build something different: brand design for Africa's fastest-growing fintech platform powering 20M+ businesses.
+              In 2022, I joined Moniepoint as Brand Design Lead. Since then: led the booth design that won Best Booth at African Tech Summit out of 200+ exhibitors, directed the 'Still Day One' brand film that hit 487K views in its first week with zero paid media, and built the visual identity system used across a platform serving 20M+ businesses.
             </p>
             <p className="text-lg text-gray-600 font-light leading-relaxed mb-8">
-              Today I lead brand design across everything from award-winning conference booths to fundraise campaigns that tell stories. The work blends what advertising taught me, conceptual thinking, visual storytelling, with what fintech demands: clarity, speed, impact.
+              I specialize in the intersection of 3D visualization and brand storytelling — making complex ideas feel physical and inevitable. The brief says 'booth design.' I deliver the thing people photograph and walk back to.
             </p>
             <p className="text-xl text-gray-900 font-light leading-relaxed">
               Great design isn't just what looks good. It's what feels inevitable.
@@ -429,6 +453,36 @@ export default function Home() {
             >
               Download Resume
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* How I Work */}
+      <section className="py-32 px-8 md:px-16 lg:px-24 bg-white border-t border-gray-100">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-20">
+            <p className="text-xs uppercase tracking-widest text-gray-400 mb-4">Process</p>
+            <h2 className="text-5xl font-light">How I work</h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-16">
+            <div>
+              <h3 className="text-xs uppercase tracking-widest text-gray-400 mb-6">The Brief</h3>
+              <p className="text-base text-gray-600 font-light leading-relaxed">
+                I read your brief, then I read between the lines. Most problems brought to a designer are symptoms, not the disease. I spend the first 20% of any engagement asking uncomfortable questions.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xs uppercase tracking-widest text-gray-400 mb-6">The Work</h3>
+              <p className="text-base text-gray-600 font-light leading-relaxed">
+                From 3D visualization to on-set direction to final delivery — I stay in the work. Not the deck about the work. The actual thing. Every detail is a decision, not a default.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xs uppercase tracking-widest text-gray-400 mb-6">The Standard</h3>
+              <p className="text-base text-gray-600 font-light leading-relaxed">
+                I've built for companies where 'good enough' means 20 million businesses see it. That standard doesn't switch off. Whoever you are, your brand deserves work that feels inevitable.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -755,8 +809,8 @@ export default function Home() {
         <div className="max-w-2xl mx-auto">
           <p className="text-xs uppercase tracking-widest text-gray-400 mb-4">Get in Touch</p>
           <h2 className="text-5xl font-light mb-8">Let's work together</h2>
-          <p className="text-base text-gray-500 font-light mb-12">
-            Available for select projects. Reach out to discuss your next big idea.
+          <p className="text-base text-gray-500 font-light mb-12 max-w-lg leading-relaxed">
+            Currently booking Q3 2026. Based in Nigeria, available remotely and for relocation to Toronto, Vancouver, or Montreal. If you're a Canadian company looking for senior brand design or a creative director who's done this at scale — let's talk.
           </p>
           <form onSubmit={handleSubmit} className="space-y-6">
             <input type="text" placeholder="Your name" required value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} className="w-full px-4 py-3 border border-gray-200 rounded-sm focus:outline-none focus:border-black transition-colors" />

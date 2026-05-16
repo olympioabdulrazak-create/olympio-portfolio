@@ -23,12 +23,12 @@ export default function TeamAptIndependence() {
             Independence Day — TeamApt
           </h1>
           <p className="text-lg md:text-xl text-gray-600 font-light leading-relaxed mb-12 max-w-3xl">
-            Art directing the "Work From Home Independence" campaign — turning Nigerian Independence Day into a cultural moment for the remote work generation.
+            Concepting and art directing the "Work From Home Independence" campaign — turning Nigerian Independence Day into a cultural moment for the remote work generation, with zero budget and organic international reach.
           </p>
           <div className="grid sm:grid-cols-3 gap-8">
             <div>
-              <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">Role</p>
-              <p className="text-sm text-gray-700 leading-relaxed">Senior Brand Designer<br />Art Director<br />Conceptual Lead</p>
+              <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">My Role</p>
+              <p className="text-sm text-gray-700 leading-relaxed">Sole conceptual lead and art director — cultural insight, campaign concept, creative direction across photo shoot, design execution, and launch strategy. Internal team only, no agency support.</p>
             </div>
             <div>
               <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">Timeline</p>
@@ -57,21 +57,38 @@ export default function TeamAptIndependence() {
       <section className="px-6 md:px-16 lg:px-24 mb-24">
         <div className="max-w-3xl mx-auto">
           <p className="text-xs uppercase tracking-widest text-gray-400 mb-4">The Challenge</p>
-          <h2 className="text-3xl md:text-4xl font-light mb-8">Make Independence Day relevant to the remote work generation</h2>
-          <p className="text-gray-600 leading-relaxed mb-6">
-            October 1st — Nigerian Independence Day. Every brand runs the same playbook: green-white-green flags, generic patriotic messaging, "Happy Independence Day Nigeria!" posts. Forgettable. Zero cultural friction.
-          </p>
+          <h2 className="text-3xl md:text-4xl font-light mb-8">Find the cultural intersection between national independence and the freedom a generation just discovered it had earned</h2>
+
+          <div className="space-y-5 mb-8">
+            <div>
+              <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">Business problem</p>
+              <p className="text-gray-600 leading-relaxed">
+                October 1st — Nigerian Independence Day. Every brand runs the same playbook: green-white-green color palette, generic patriotic messaging, "Happy Independence Day Nigeria!" posts with the flag. The result is a sea of indistinguishable content that earns goodwill with no one. For TeamApt — a B2B fintech brand with a product rooted in enabling digital business — this moment was an opportunity to say something real, or say nothing interesting. The business needed organic reach among the exact demographic that uses its products: young, mobile-first Nigerian professionals working outside traditional structures.
+              </p>
+            </div>
+            <div>
+              <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">Audience tension</p>
+              <p className="text-gray-600 leading-relaxed">
+                2022 was the year remote work shifted from survival mode to identity. COVID forced the transition; by Independence Day 2022 it had become permanent for millions of young Nigerian professionals — and they were proud of it. But brands weren't reflecting that back to them. Every Independence Day campaign spoke to a Nigeria of flags and civic pride. No one was speaking to the Nigeria of balconies, video calls, and reclaimed mornings. That gap was the creative opportunity.
+              </p>
+            </div>
+            <div>
+              <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">Creative challenge</p>
+              <p className="text-gray-600 leading-relaxed">
+                Create a campaign that felt culturally resonant rather than generic, celebrated remote workers (TeamApt's core user base), connected the product's value proposition without being salesy, and — critically — did all of this with no external agency, no paid media budget, and a 4-week timeline built around an immovable calendar date.
+              </p>
+            </div>
+          </div>
+
           <div className="bg-gray-50 p-6 rounded-sm mb-6">
-            <p className="text-sm font-medium mb-3">The cultural insight</p>
+            <p className="text-sm font-medium mb-3">The cultural insight that unlocked everything</p>
             <p className="text-gray-600 text-sm leading-relaxed">
-              2022 was the year remote work went mainstream in Nigeria. COVID forced the shift, but by Independence Day 2022 it had become permanent for millions of young professionals. Nigerian Independence Day celebrates freedom from colonial rule. Remote work represents a different kind of freedom — from commutes, dress codes, rigid schedules. Both are about reclaiming autonomy. That parallel became our creative territory.
+              Nigerian Independence Day celebrates freedom from colonial rule — reclaiming autonomy over your own future. Remote work represents a parallel kind of freedom: from commutes, dress codes, rigid schedules, managers who equate presence with performance. Both are about reclaiming time and agency. That parallel wasn't a stretch — it was the most honest thing we could say. <em>Independence isn't just political. It's personal.</em>
             </p>
           </div>
-          <p className="text-gray-600 leading-relaxed mb-6">
-            The brief: create a campaign that felt culturally resonant (not generic), celebrated remote workers (our core audience), and connected TeamApt's product (digital payments enabling remote business) without being salesy.
-          </p>
+
           <p className="text-gray-600 leading-relaxed">
-            <strong>The constraint:</strong> 4-week timeline, limited budget, internal team only — no external agency support.
+            <strong>The constraint:</strong> 4-week timeline, limited budget, internal team only — no external agency support, no paid promotion. Whatever reach this earned, it had to earn through relevance.
           </p>
         </div>
       </section>
@@ -92,17 +109,23 @@ export default function TeamAptIndependence() {
                 </div>
               </div>
               <p className="text-gray-600 leading-relaxed mb-5">
-                The campaign idea arrived from one observation: <em>Independence isn't just political — it's personal.</em>
+                The campaign idea arrived from one observation: <em>Independence isn't just political — it's personal.</em> The moment that framing landed, everything else followed logically.
               </p>
               <p className="text-gray-600 leading-relaxed mb-5">
-                The "Work From Home Independence" concept: a series of split-screen visuals showing "traditional office expectation" vs. "WFH reality." Each image celebrates a specific freedom that remote work gave back — morning time, commute time, dress code.
+                "Work From Home Independence": a series of split-screen visuals showing "traditional office expectation" vs. "WFH reality." Each image celebrates a specific freedom that remote work gave back — morning time, commute time, dress code. The split-screen format was deliberate: it made the contrast undeniable without requiring a single word of explanation.
               </p>
+
+              <div className="bg-black text-white p-5 rounded-sm mb-5">
+                <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">Key creative decision</p>
+                <p className="text-sm leading-relaxed">Make the format inherently shareable by design — not as an afterthought. The split-screen gave audiences an obvious template to recreate with their own setups. Virality was baked into the structure, not bolted on as a hashtag strategy.</p>
+              </div>
+
               <div className="bg-white p-5 rounded-sm">
                 <p className="text-sm font-medium mb-3">The three hero assets:</p>
                 <ul className="space-y-3 text-sm text-gray-600">
-                  <li><strong>"The Morning Meeting"</strong> — Empty conference room vs. person on video call from bed, coffee in hand. Copy: <em>"Independence is taking your 9 AM from bed."</em></li>
-                  <li><strong>"The Commute"</strong> — Lagos traffic jam vs. person working from balcony overlooking the city. Copy: <em>"Independence is reclaiming 3 hours from traffic."</em></li>
-                  <li><strong>"The Dress Code"</strong> — Corporate suit hanging on door vs. casual WFH setup. Copy: <em>"Independence is dressing for productivity, not performance."</em></li>
+                  <li><strong>"The Morning Meeting"</strong> — Empty conference room vs. person on video call from bed, coffee in hand.<br /><em className="text-gray-500">"Independence is taking your 9 AM from bed."</em></li>
+                  <li><strong>"The Commute"</strong> — Lagos traffic jam vs. person working from balcony overlooking the city.<br /><em className="text-gray-500">"Independence is reclaiming 3 hours from traffic."</em></li>
+                  <li><strong>"The Dress Code"</strong> — Corporate suit hanging on a door vs. casual WFH setup.<br /><em className="text-gray-500">"Independence is dressing for productivity, not performance."</em></li>
                 </ul>
               </div>
             </div>
@@ -116,21 +139,32 @@ export default function TeamAptIndependence() {
                 </div>
               </div>
               <p className="text-gray-600 leading-relaxed mb-5">
-                I cast 6 real TeamApt remote workers — not models. Their actual setups. Their actual hours. I was on-set for every shoot, directing compositions and protecting the authenticity.
+                I cast 6 real TeamApt remote workers — not models, not actors. Their actual setups. Their actual hours. Their actual coffee mugs. I was on-set for every shoot, directing compositions and protecting the one thing that would make or break the campaign: authenticity.
               </p>
               <div className="bg-white p-5 rounded-sm mb-5">
-                <p className="text-sm font-medium mb-3">Art direction rules for the photographer:</p>
+                <p className="text-sm font-medium mb-3">Art direction rules I set for the photographer — and held to:</p>
                 <ul className="space-y-2 text-sm text-gray-600">
-                  <li>✓ Natural light only — no studio setups</li>
-                  <li>✓ Wide shots showing the full environment context</li>
-                  <li>✓ Capture candid moments — working, not posing</li>
-                  <li>✓ Include personal touches: plants, art, coffee mugs, mess</li>
-                  <li>✓ Mix wide + close-up for layout flexibility in post</li>
+                  <li>✓ Natural light only — no studio setups, no ring lights, no diffusion</li>
+                  <li>✓ Wide shots showing the full environment and its context</li>
+                  <li>✓ Capture candid working moments — never posing, always doing</li>
+                  <li>✓ Include personal touches: plants, art, coffee mugs, mess, real life</li>
+                  <li>✓ Mix wide and close-up in every setup for layout flexibility in post</li>
                 </ul>
               </div>
-              <p className="text-gray-600 leading-relaxed">
-                The rule I kept repeating: <em>"If it looks like it could be a stock photo, we reshoot."</em>
-              </p>
+
+              <div className="bg-black text-white p-5 rounded-sm mb-5">
+                <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">Key creative decision</p>
+                <p className="text-sm leading-relaxed">One rule for the entire shoot: <em>"If it looks like it could be a stock photo, we reshoot."</em> Stock photo aesthetics would have killed the campaign's credibility instantly. The audience knows what authentic WFH looks like — they live it. You can't fake your way through that.</p>
+              </div>
+
+              <div className="bg-white p-5 rounded-sm">
+                <p className="text-sm font-medium mb-3">What I killed on shoot day:</p>
+                <ul className="space-y-2 text-sm text-gray-600">
+                  <li>• Killed 3 planned setups that felt too "managed" — clean desks, curated backgrounds, subjects too aware of the camera</li>
+                  <li>• Killed posed "happy at laptop" shots in favor of subjects mid-task, mid-thought, mid-coffee</li>
+                  <li>• Killed the "office" side of the split-screen being recreated in a studio — found a real Lagos office instead</li>
+                </ul>
+              </div>
             </div>
 
             <div>
@@ -142,18 +176,24 @@ export default function TeamAptIndependence() {
                 </div>
               </div>
               <p className="text-gray-600 leading-relaxed mb-5">
-                I designed the split-screen layouts with Nigeria's green-white-green color palette integrated subtly — as borders and accents, not heavy-handed flags. Clean, minimal type. The brand mark present but not dominating.
+                I designed the split-screen layouts using Figma and Adobe Photoshop, with Lightroom for photo treatment. Nigeria's green-white-green palette was integrated subtly — as borders and accents, never heavy-handed flag imagery. Clean, minimal type. The brand mark present but not dominating. The work earns the logo placement; the logo doesn't demand attention.
               </p>
               <p className="text-gray-600 leading-relaxed mb-5">
-                The product connection was implicit: TeamApt enables digital payments, which enables remote business. You can't show up to collect cash anymore — digital tools made remote work possible. The brand earns attention through the story, not through logo size.
+                The product connection was kept implicit and honest: TeamApt enables digital payments, which enables remote business. You can't collect cash anymore if your customers are remote — digital tools made the WFH economy possible. We didn't say it. We showed it by being there.
               </p>
+
+              <div className="bg-black text-white p-5 rounded-sm mb-5">
+                <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">Key creative decision</p>
+                <p className="text-sm leading-relaxed">Keep the product connection implicit, not explicit. The brand earns attention through the story it tells — not through the logo's size or a product shot in the final frame. Every time we were tempted to explain what TeamApt does, we cut it. Explanation is the enemy of emotion.</p>
+              </div>
+
               <div className="bg-white p-5 rounded-sm">
-                <p className="text-sm font-medium mb-3">Distribution (all organic — zero paid media):</p>
+                <p className="text-sm font-medium mb-3">Distribution — all organic, zero paid media:</p>
                 <ul className="space-y-2 text-sm text-gray-600">
-                  <li>• Instagram carousel (3 images)</li>
-                  <li>• Twitter/X thread with individual images</li>
-                  <li>• LinkedIn company page + employee advocacy push</li>
-                  <li>• Internal Slack for employee sharing</li>
+                  <li>• Instagram carousel (3 images, sequenced for scroll pacing)</li>
+                  <li>• Twitter/X thread with individual images released over the morning</li>
+                  <li>• LinkedIn company page + coordinated employee advocacy push</li>
+                  <li>• Internal Slack for employee sharing — the team became the first distribution channel</li>
                 </ul>
               </div>
             </div>
@@ -170,27 +210,40 @@ export default function TeamAptIndependence() {
           <div className="grid sm:grid-cols-3 gap-6 mb-12">
             <div className="bg-gray-50 p-6 rounded-sm">
               <p className="text-3xl font-light mb-1">127K</p>
-              <p className="text-sm text-gray-500 mb-3">Organic impressions</p>
-              <p className="text-xs text-green-600">Target: 50K ✓</p>
+              <p className="text-sm text-gray-500 mb-2">Organic impressions</p>
+              <p className="text-xs text-green-600 mb-1">Target: 50K ✓</p>
+              <p className="text-xs text-gray-400">154% above target; zero paid media</p>
             </div>
             <div className="bg-gray-50 p-6 rounded-sm">
               <p className="text-3xl font-light mb-1">3.2K</p>
-              <p className="text-sm text-gray-500 mb-3">Shares and retweets</p>
-              <p className="text-xs text-gray-400">Zero paid promotion</p>
+              <p className="text-sm text-gray-500 mb-2">Shares and retweets</p>
+              <p className="text-xs text-gray-400 mb-1">Zero paid promotion</p>
+              <p className="text-xs text-gray-400">40+ users recreated the format themselves</p>
             </div>
             <div className="bg-gray-50 p-6 rounded-sm">
               <p className="text-3xl font-light mb-1">89%</p>
-              <p className="text-sm text-gray-500 mb-3">Positive sentiment</p>
-              <p className="text-xs text-gray-400">Comments analysis</p>
+              <p className="text-sm text-gray-500 mb-2">Positive sentiment</p>
+              <p className="text-xs text-gray-400 mb-1">Comments analysis</p>
+              <p className="text-xs text-gray-400">800+ comments; majority personal WFH stories</p>
             </div>
           </div>
 
           <ul className="space-y-3 mb-12 text-sm text-gray-600">
-            <li>📰 Featured on Ads of the World — one of the few Nigerian campaigns selected that month</li>
-            <li>💬 800+ comments and replies, mostly people sharing their own WFH stories</li>
-            <li>📸 40+ users recreated the split-screen format with their own setups (organic UGC)</li>
-            <li>🏆 Set the creative benchmark for subsequent TeamApt and Moniepoint campaigns</li>
+            <li>📰 Featured on Ads of the World — one of the few Nigerian campaigns selected that month, placing the work in an international creative reference library</li>
+            <li>💬 800+ comments and replies, mostly people sharing their own WFH stories — the campaign became a conversation, not a broadcast</li>
+            <li>📸 40+ users recreated the split-screen format with their own setups — organic UGC generated by the design structure itself</li>
+            <li>🏆 Set the creative benchmark for subsequent TeamApt and Moniepoint campaigns — "make it feel this real" became the internal brief standard</li>
           </ul>
+
+          <div className="bg-gray-50 p-6 rounded-sm mb-10">
+            <p className="text-xs uppercase tracking-widest text-gray-400 mb-3">Business impact beyond the brief</p>
+            <p className="text-gray-600 text-sm leading-relaxed mb-3">
+              Beyond the metrics: this campaign shifted how TeamApt was perceived. Before it, the brand was known as a fintech product. After it, the brand had a point of view. That shift — from product company to brand with a perspective — is what made the subsequent Moniepoint rebrand credible rather than cosmetic.
+            </p>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Culture-first campaign thinking is increasingly what separates memorable Canadian brand work from forgettable executions. Canadian brands — especially those reaching multicultural or globally-connected audiences — need designers who understand how to connect global cultural shifts to local moments without being generic. That's exactly what this campaign demonstrates.
+            </p>
+          </div>
 
           <div className="space-y-8">
             <div className="border-l-4 border-black pl-6">
@@ -209,6 +262,42 @@ export default function TeamAptIndependence() {
         </div>
       </section>
 
+      {/* Skills */}
+      <section className="px-6 md:px-16 lg:px-24 mb-24">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-xs uppercase tracking-widest text-gray-400 mb-6">Skills & Tools</p>
+          <div className="grid sm:grid-cols-3 gap-6">
+            <div>
+              <p className="text-xs font-medium uppercase tracking-wider text-gray-500 mb-3">Design</p>
+              <ul className="space-y-1 text-sm text-gray-600">
+                <li>Adobe Photoshop</li>
+                <li>Adobe Lightroom</li>
+                <li>Figma</li>
+                <li>Adobe Illustrator</li>
+              </ul>
+            </div>
+            <div>
+              <p className="text-xs font-medium uppercase tracking-wider text-gray-500 mb-3">Creative Direction</p>
+              <ul className="space-y-1 text-sm text-gray-600">
+                <li>Campaign concepting</li>
+                <li>Photography direction</li>
+                <li>Art direction on-set</li>
+                <li>Copy direction</li>
+              </ul>
+            </div>
+            <div>
+              <p className="text-xs font-medium uppercase tracking-wider text-gray-500 mb-3">Strategy</p>
+              <ul className="space-y-1 text-sm text-gray-600">
+                <li>Cultural insight research</li>
+                <li>Organic distribution strategy</li>
+                <li>Brand voice development</li>
+                <li>UGC-first design thinking</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Learnings */}
       <section className="px-6 md:px-16 lg:px-24 mb-24 bg-gray-50 py-16">
         <div className="max-w-3xl mx-auto">
@@ -217,21 +306,21 @@ export default function TeamAptIndependence() {
             <div>
               <h4 className="text-sm font-medium mb-4 text-green-600 uppercase tracking-wider">What worked</h4>
               <ul className="space-y-3 text-sm text-gray-600">
-                <li>✓ Cultural insight (WFH = independence) drove everything</li>
-                <li>✓ Real people beat stock photos — authenticity always wins</li>
-                <li>✓ Split-screen format was instantly shareable and replicable</li>
-                <li>✓ Light product touch = higher engagement (less salesy = more trusted)</li>
-                <li>✓ Timing the launch to Oct 1 maximized organic discovery</li>
+                <li>✓ Cultural insight (WFH = independence) drove every downstream decision</li>
+                <li>✓ Real people beat stock photos — authenticity is not a style choice, it's a strategic one</li>
+                <li>✓ Shareable-by-design format drove organic UGC without a hashtag campaign</li>
+                <li>✓ Light product touch created higher trust and higher engagement — less selling, more believing</li>
+                <li>✓ Timing the launch to the exact date maximized organic discovery in a crowded feed</li>
               </ul>
             </div>
             <div>
               <h4 className="text-sm font-medium mb-4 text-orange-500 uppercase tracking-wider">What I'd change</h4>
               <ul className="space-y-3 text-sm text-gray-600">
-                <li>⚡ Create video versions upfront (static images capped reach)</li>
-                <li>⚡ Build UGC toolkit — many people wanted to participate</li>
-                <li>⚡ Seed with 3–4 influencers on launch day</li>
-                <li>⚡ Document shoot BTS — missed a huge content opportunity</li>
-                <li>⚡ Extend campaign beyond one day — momentum warranted a week</li>
+                <li>⚡ Create video versions upfront — static images capped reach on platforms rewarding motion</li>
+                <li>⚡ Build a UGC toolkit — 40+ people recreated the format without any guidance; imagine with one</li>
+                <li>⚡ Seed with 3–4 influencers on launch day to extend the opening window</li>
+                <li>⚡ Document the shoot process — the behind-the-scenes was a missed content multiplier</li>
+                <li>⚡ Extend the campaign beyond one day — the momentum warranted at least a week</li>
               </ul>
             </div>
           </div>
@@ -248,8 +337,8 @@ export default function TeamAptIndependence() {
                 Back to all projects →
               </Link>
             </div>
-            <Link href="/work/african-tech-summit" className="text-sm text-gray-500 hover:text-black transition-colors">
-              ← African Tech Summit
+            <Link href="/work/moniepoint-fundraise" className="text-sm text-gray-500 hover:text-black transition-colors">
+              ← Still Day One — Fundraise
             </Link>
           </div>
           <div className="text-center bg-gray-50 py-16 px-8 rounded-sm">
