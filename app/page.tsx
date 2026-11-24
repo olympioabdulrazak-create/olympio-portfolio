@@ -350,9 +350,6 @@ export default function Home() {
             </a>
           </div>
 
-          <p className="text-xs text-gray-400 font-light tracking-wide">
-            Currently booking Q3 2026 — 2 project slots remaining
-          </p>
         </div>
       </section>
 
@@ -810,7 +807,7 @@ export default function Home() {
           <p className="text-xs uppercase tracking-widest text-gray-400 mb-4">Get in Touch</p>
           <h2 className="text-5xl font-light mb-8">Let's work together</h2>
           <p className="text-base text-gray-500 font-light mb-12 max-w-lg leading-relaxed">
-            Currently booking Q3 2026. Based in Nigeria, available remotely and for relocation to Toronto, Vancouver, or Montreal. If you're a Canadian company looking for senior brand design or a creative director who's done this at scale — let's talk.
+            Based in Nigeria, available remotely and for relocation to Toronto, Vancouver, or Montreal. If you're a Canadian company looking for senior brand design or a creative director who's done this at scale — let's talk.
           </p>
           <form onSubmit={handleSubmit} className="space-y-6">
             <input type="text" placeholder="Your name" required value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} className="w-full px-4 py-3 border border-gray-200 rounded-sm focus:outline-none focus:border-black transition-colors" />
