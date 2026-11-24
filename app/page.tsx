@@ -854,14 +854,16 @@ export default function Home() {
       )}
 
       {/* Brief Assistant Widget */}
+      {!showMatcher && (
       <button
         onClick={() => setShowBriefWidget(true)}
         onMouseEnter={() => setCursorHover(true)}
         onMouseLeave={() => setCursorHover(false)}
-        className="fixed bottom-8 left-8 bg-black text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-all hover:scale-105 shadow-2xl z-50"
+        className="fixed bottom-6 right-6 bg-black text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-all hover:scale-105 shadow-2xl z-50"
       >
         💡 Not sure what you need?
       </button>
+      )}
 
       {showBriefWidget && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[100] flex items-center justify-center p-4" onClick={() => setShowBriefWidget(false)}>
