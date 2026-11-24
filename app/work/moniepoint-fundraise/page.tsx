@@ -398,7 +398,7 @@ export default function MoniePointFundraise() {
           </div>
           <div className="text-center bg-gray-50 py-16 px-8 rounded-sm">
             <h3 className="text-2xl font-light mb-4">Need brand film or creative direction?</h3>
-            <p className="text-gray-500 text-sm mb-8">Currently booking Q3 2026. Open to opportunities in Toronto, Vancouver, and Montreal.</p>
+            <p className="text-gray-500 text-sm mb-8">Open to opportunities in Toronto, Vancouver, and Montreal.</p>
             <a href="/#contact" className="inline-block px-6 py-3 bg-black text-white text-sm font-medium hover:bg-gray-800 transition-colors">
               Start a conversation
             </a>
